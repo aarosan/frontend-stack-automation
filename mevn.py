@@ -34,9 +34,12 @@ def initialize_root_package_json(destination):
         print(f"An error occurred while initializing or updating package.json: {e}")
 
 def create_server(source, destination):
+    # Resolve the absolute path of the source
+    source = "./templates/server"
+    print(f"Source directory: {source}")
     # Create the server directory path
     server_destination = os.path.join(destination, "server")
-
+    print(f"Server directory: {server_destination}")
     if not os.path.exists(source):
         print(f"Source directory '{source}' does not exist.")
         return
