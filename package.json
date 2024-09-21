@@ -1,0 +1,16 @@
+{
+  "name": "frontend-stack-automation",
+  "version": "1.0.0",
+  "description": "This project automates the setup of frontend projects using popular tech stacks: MERN, MEVN, and MEAN. It helps developers quickly scaffold a full-stack web application by generating both server and client components tailored to the selected stack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
